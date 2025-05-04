@@ -1,0 +1,21 @@
+{
+	"[typescript]": {
+	  "editor.defaultFormatter": "esbenp.prettier-vscode",
+	  "editor.tabSize": 2,
+	  "editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+	  "editor.defaultFormatter": "esbenp.prettier-vscode",
+	  "editor.tabSize": 2,
+	  "editor.formatOnSave": true
+	},
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.printWidth": 1000,
+	"files.autoSave": "afterDelay",
+	"explorer.compactFolders": false,
+	"files.insertFinalNewline": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "never",
+	"editor.fontSize": 15
+  }
