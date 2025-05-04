@@ -1,21 +1,32 @@
 {
-	"[typescript]": {
-	  "editor.defaultFormatter": "esbenp.prettier-vscode",
-	  "editor.tabSize": 2,
-	  "editor.formatOnSave": true
-	},
-	"[typescriptreact]": {
-	  "editor.defaultFormatter": "esbenp.prettier-vscode",
-	  "editor.tabSize": 2,
-	  "editor.formatOnSave": true
-	},
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"prettier.printWidth": 1000,
-	"files.autoSave": "afterDelay",
-	"explorer.compactFolders": false,
-	"files.insertFinalNewline": true,
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"typescript.updateImportsOnFileMove.enabled": "never",
-	"editor.fontSize": 15
-  }
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true
+  },
+  "search.exclude": {
+    "/node_modules": true,
+    "/yarn.lock": true,
+    "packages/website/src/swagger": true
+  },
+  "stylelint.validate": ["css", "scss"],
+  "scss.validate": false,
+  "css.validate": false,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
