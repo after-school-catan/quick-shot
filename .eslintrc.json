@@ -1,0 +1,70 @@
+{
+  "root": true,
+  "env": {
+    "es2017": true
+  },
+  "parserOptions": { "ecmaVersion": 8 },
+  "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["import"],
+  "rules": {
+    "dot-notation": "warn",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": ["lodash"],
+        "patterns": ["lodash/"]
+      }
+    ],
+    "@next/next/no-img-element": "off",
+    "import/order": [
+      "error",
+      {
+        "alphabetize": { "caseInsensitive": true, "order": "asc" },
+        "newlines-between": "always",
+        "groups": [
+          "builtin",
+          "external",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "@alias/",
+            "group": "parent",
+            "position": "before"
+          }
+        ]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["/.ts?(x)"],
+      "parser": "@typescript-eslint/parser",
+      "extends": ["plugin:@typescript-eslint/recommended"],
+      "rules": {
+        "no-console": "error",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          { "argsIgnorePattern": "^", "destructuredArrayIgnorePattern": "^" }
+        ],
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-empty-function": "off"
+      }
+    },
+    {
+      "files": ["**.stories.tsx"],
+      "extends": ["plugin:storybook/recommended"],
+      "rules": {
+        "no-console": "off",
+        "storybook/meta-satisfies-type": "error"
+      }
+    }
+  ]
+}
