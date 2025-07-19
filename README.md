@@ -1,3 +1,48 @@
+## Development environment
+1. Install nvm (Node Version Manager)
+
+    Download nvm-setup.exe from the following link:
+    nvm-windows GitHub Releases
+
+    Run the downloaded .exe file to complete the installation.
+
+2. Install Node.js
+
+    Check the list of available Node.js versions:
+
+nvm list available
+
+This project uses version 24.4.0. Install it with the following command:
+
+nvm install 24.4.0
+
+Switch to the installed version:
+
+    nvm use 24.4.0
+
+        ⚠️ Please run the command with administrator privileges (e.g., using sudo if on UNIX-based systems).
+
+3. Set Up npm (Node Package Manager)
+Start the development server
+
+npm run dev
+
+If the server fails to start
+
+    Install project dependencies:
+
+npm install
+
+Check the installed React version:
+
+    npm list react
+
+4. Install TypeScript
+
+Install TypeScript globally with the following command:
+
+npm install -g typescript
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
